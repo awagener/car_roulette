@@ -1,0 +1,8 @@
+%html 
+  %head 
+    %title Northland Vehicles 
+  %body 
+    -@cars.each do |car|
+      %h1= "Driver: #{car.driver}"
+      -car.passengers.each do |passenger|
+        %p= passenger
